@@ -27,7 +27,7 @@ public final class FlutterCompassPlugin implements FlutterPlugin, StreamHandler 
     // Android API levels about 9, we are able to set this value ourselves rather
     // than using one of the provided constants which deliver updates too quickly
     // for our use case. The default is set to 100ms
-    private static final int SENSOR_DELAY_MICROS = 0;
+    private static final int SENSOR_DELAY_MICROS = sensorManager.SENSOR_DELAY_FASTEST;
 
     // Filtering coefficient 0 < ALPHA < 1
     private static final float ALPHA = 0.45f;
